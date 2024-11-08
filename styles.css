@@ -1,6 +1,9 @@
 body {
   background-color: rgb(238, 230, 212);
 }
+.hidden_counter {
+  display: none;
+}
 .nav-link.active {
     font-weight: bold;
     border-bottom: 2px solid rgb(241, 197, 92);;
