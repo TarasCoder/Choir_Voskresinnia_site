@@ -8,6 +8,15 @@ body {
     font-weight: bold;
     border-bottom: 2px solid rgb(241, 197, 92);;
   }
+  
+.btn-copy {
+  border-radius: 20px;
+  border: 0;
+  height: 25px;
+  color: red;
+  background-color: #fff;
+  cursor: pointer;
+}
 .account {
   font-weight: bold;
 }

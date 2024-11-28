@@ -1,12 +1,12 @@
 // Adding "active" class to navigation element
-const currentPage = window.location.pathname.split('/').pop().toLowerCase();
+const currentPage = window.location.pathname.split("/").pop().toLowerCase();
 
-document.querySelectorAll('.nav-link').forEach(link => {
-  const linkPage = link.getAttribute('href').replace('./', '').toLowerCase();
+document.querySelectorAll(".nav-link").forEach((link) => {
+  const linkPage = link.getAttribute("href").replace("./", "").toLowerCase();
   if (linkPage === currentPage) {
-    link.classList.add('active');
+    link.classList.add("active");
   } else {
-    link.classList.remove('active');
+    link.classList.remove("active");
   }
 });
 
@@ -17,11 +17,14 @@ year.innerText = currentYear;
 
 // Logic of copying IBAN's to clipboard
 let privatAccount = document.getElementById("privatAccount");
-let monoAccount = document.getElementById("monoAccount");
 let copyPrivat = document.getElementById("copyPrivat");
+let monoAccount = document.getElementById("monoAccount");
 let copyMono = document.getElementById("copyMono");
 
-if (window.location.pathname === '/support.html' || window.location.pathname === './support.html') {
+if (
+  window.location.pathname === "/pages/support.html" ||
+  window.location.pathname === "/pages/support.html"
+) {
   copyPrivat.addEventListener("click", () => {
     copyToClipboard(privatAccount);
   });
