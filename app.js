@@ -21,10 +21,7 @@ let copyPrivat = document.getElementById("copyPrivat");
 let monoAccount = document.getElementById("monoAccount");
 let copyMono = document.getElementById("copyMono");
 
-if (
-  window.location.pathname === "/pages/support.html" ||
-  window.location.pathname === "/pages/support.html"
-) {
+if (window.location.pathname.endsWith("/pages/support.html")) {
   copyPrivat.addEventListener("click", () => {
     copyToClipboard(privatAccount);
   });
