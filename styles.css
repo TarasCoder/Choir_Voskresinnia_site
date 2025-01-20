@@ -8,7 +8,9 @@ body {
     font-weight: bold;
     border-bottom: 2px solid rgb(241, 197, 92);;
   }
-  
+.gallery{
+  align-items: center;
+}
 .btn-copy {
   border-radius: 20px;
   border: 0;

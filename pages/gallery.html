@@ -71,7 +71,17 @@
       <h2>Фотогалерея:</h2>
 
       <div class="container mt-4">
-        <div class="row">
+        <div class="row gallery">
+          <!-- Image 0 -->
+          <div class="col-md-4 mb-4">
+            <img
+              src="../images/photos/photos_thumbnails/photo_2025-01-20_22-18-57_thumbnail.png"
+              class="img-fluid thumbnail_img"
+              alt="Image 1"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal1"
+            />
+          </div>
           <!-- Image 1 -->
           <div class="col-md-4 mb-4">
             <img
@@ -170,6 +180,26 @@
       </div>
 
       <!-- Модальні вікна -->
+      <div
+        class="modal fade"
+        id="imageModal1"
+        tabindex="-1"
+        aria-labelledby="modalLabel1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <img
+                src="../images/photos/photo_2025-01-20_22-18-57.png"
+                class="img-fluid"
+                alt="Image 1"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div
         class="modal fade"
         id="imageModal1"
